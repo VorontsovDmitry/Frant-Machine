@@ -1,0 +1,15 @@
+p{
+    margin: 30px;
+}
+
+*{
+    text-align: center;
+}
+
+.basic-text{
+    color: var(--font-color);
+}
+
+.basic-footer a{
+    color: white;
+}

@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Play:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+html{
+    background-color: #282828;
+}
+
+body{
+    --bg-color: white;
+    --font-color: #333;
+    --state: none;
+    font-family: 'Play', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.basic-title{
+    text-align: center;
+    font-size: 65px;
+    color: var(--font-color);
+    font-weight: bolder;
+    margin: 100px 0 80px 0;
+    display: block;
+}
+
+.basic-mini_title{
+    font-size: 55px;
+    color: var(--font-color);
+    font-weight: bolder;
+}
+
+.basic-text{
+    font-size: 30px;
+}
+
+.basic-big_text{
+    font-size: 40px;
+}
+
+.basic-hr{
+    width: 90%;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.basic-color{
+    color: var(--font-color);
+}
+
+.white{
+    color: white;
+}
+
+.red{
+    color: #BC3737;
+}
+
+.hv-red:hover{
+    color: #BC3737;
+}
+
+.hv-red_btn:hover{
+    cursor: pointer;
+    color: #BC3737;
+    border: #BC3737 2px solid;
+}
+
+.hv-pointer:hover{
+    cursor: pointer;
+}
+
+.hv-scale:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.basic-header{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    margin-top: 0;
+}
+
+.basic-header__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 5%;
+    background-color: rgba(40, 40, 40, 0.99);
+}
+
+.logo{
+    font-family: 'Italiana', sans-serif;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 21px;
+}
+
+.burger_menu-nav{
+    display: var(--state);
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+    background-image: url("../assets/Rectangle9.png");
+}
+
+.burger_menu-link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.basic-slider{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 30px;
+}
+
+.slider-block{
+    display: none;
+    text-align: center;
+}
+
+.active{
+    display: block;
+}
+
+.slider-block img{
+    max-width: 100%;
+}
+
+.slider-block p{
+    font-size: 45px;
+    font-weight: bolder;
+    background: #282828;
+    margin: -3.5px;
+}
+
+.basic-slider a{
+    color: white;
+}
+
+.basic-footer{
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.basic-footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 50px 0;
+}
+
+.basic-footer__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 50px 0;
+}
+
+.basic-footer__socials{
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basic-footer__switch_buttons{
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basic-footer a{
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .basic-big_text{
+        font-size: 30px;
+    }
+    
+    .slider-block p{
+        font-size: 25px;
+        margin: -3.5px;
+    }
+}
+
+@media screen and (max-width: 631px) {
+    .logo{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .basic-title{
+        font-size: 45px;
+        margin: 50px 0 40px 0;
+    }
+
+    .basic-mini_title{
+        font-size: 40px;
+    }
+
+    .basic-big_text{
+        font-size: 22px;
+    }
+
+    .basic-text{
+        font-size: 20px;
+    }
+
+    .burger_menu-link{
+        font-size: 10px;
+    }
+
+    .basic-footer__menu{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logo{
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .basic-title{
+        font-size: 40px;
+        margin: 40px 0 15px 0;
+    }
+
+    .basic-mini_title{
+        font-size: 30px;
+    }
+
+    .basic-big_text{
+        font-size: 15px;
+    }
+
+    .basic-text{
+        font-size: 13px;
+    }
+
+    .slider-block p{
+        font-size: 15px;
+        margin: -3.5px;
+    }
+}

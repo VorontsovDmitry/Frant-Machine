@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    width: 500px;
+    height: 60px;
+    background: none;
+    border: var(--font-color) solid 3px;
+    margin: 10px 0 30px 0;
+    border-radius: 10px;
+}
+input:hover{
+    border-color: #BC3737;
+}
+
+.basic-text{
+    color: var(--font-color);
+}
+
+.submit{
+    height: 40px;
+    color: var(--font-color);
+}
+
+a{
+    color: var(--font-color);
+}
+
+@media screen and (max-width: 576px) {
+    input{
+        width: 300px;
+        height: 60px;
+    }
+}

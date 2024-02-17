@@ -1,0 +1,199 @@
+.index-video_section{
+    width: 100%;
+    max-height: 750px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.index-video_section__media{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width: 100%;
+}
+
+.index-video_section__title{
+    position: absolute;
+    z-index: 1;
+    bottom: 10%;
+    left: 5%;
+}
+
+.index-video_section__title--text{
+    max-width: 350px;
+    color: white;
+    font-size: 65px;
+}
+
+.index-video_section__title--link{
+    margin-top: 10px;
+    display: block;
+    max-width: 254px;
+    color: white;
+    border: white solid 5px;
+    border-radius: 15px;
+    font-size: 50px;
+    font-weight: bolder;
+    padding: 0 15px;
+}
+.index-video_section__title--link:hover{
+    color: #BC3737;
+    border: #BC3737 solid 5px;
+}
+
+.index-subscription_section__blocks{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.index-subscription_section__block{
+    padding: 15px 30px;
+    border-left: #9A9A9A solid 2px;
+    text-align: left;
+    width: 500px;
+}
+
+.index-subscription_section__block p{
+    margin: 20px 0;
+}
+
+.index-subscription_section__block ul{
+    margin-left: 25px;
+}
+
+.subscription-btn{
+    font-size: 40px;
+    color: var(--font-color);
+    border: var(--font-color) 2px solid;
+    font-family: 'Play', sans-serif;
+    background: none;
+    margin-top: 24px;
+    padding: 0 50px 5px;
+}
+
+.activeted{
+    color: #9A9A9A;
+    border: #9A9A9A 2px solid;
+    margin-top: 60px;
+}
+
+.index-about_section .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+.index-about_section__block{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.index-about_section__block p{
+    max-width: 500px;
+}
+
+.index-about_section__block img{
+    max-width: 200px;
+}
+
+.index-about_section__block b{
+    font-size: 150px;
+}
+
+body .index-about_section{
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .index-video_section__title--text{
+        font-size: 50px;
+    }
+
+    .index-video_section__title--link{
+        border: white solid 5px;
+        max-width: 205px;
+        border-radius: 15px;
+        font-size: 40px;
+        padding: 0 15px;
+    }
+
+    .index-about_section__block img{
+        max-width: 150px;
+    }
+
+    .index-about_section__block b{
+        font-size: 120px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .index-video_section__title--text{
+        font-size: 40px;
+    }
+
+    .index-video_section__title--link{
+        border: white solid 3px;
+        max-width: 155px;
+        border-radius: 10px;
+        font-size: 30px;
+        padding: 0 15px;
+    }
+
+    .index-about_section__block img{
+        max-width: 100px;
+    }
+
+    .index-about_section__block b{
+        font-size: 100px;
+    }
+
+    .index-about_section__block{
+        gap: 25px;
+    }
+
+    .subscription-btn{
+        font-size: 30px;
+        margin-top: 24px;
+        padding: 0 50px 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .index-video_section__title--text{
+        font-size: 20px;
+        max-width: 150px;
+    }
+
+    .index-video_section__title--link{
+        border: white solid 2px;
+        max-width: 80px;
+        border-radius: 7px;
+        font-size: 15px;
+        padding: 0 15px;
+    }
+
+    .index-about_section__block img{
+        max-width: 50px;
+    }
+
+    .index-about_section__block b{
+        font-size: 60px;
+    }
+
+    .subscription-btn{
+        font-size: 10px;
+        margin-top: 24px;
+        padding: 0 50px 5px;
+    }
+}

@@ -1,0 +1,30 @@
+.al-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container-block:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.container-block p{
+    width: 100%;
+    background-color: #282828;
+    color: white;
+    text-align: center;
+}
+
+.container-block img{
+    width: 100%;
+}
+
+img{
+    max-width: 600px;
+}
+
+main a{
+    margin-top: 50px;
+}
